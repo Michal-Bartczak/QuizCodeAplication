@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Madim+One&display=swap");
+
+nav {
+  background-color: orange;
+  border-radius: 0 0 10px 10px;
+  color: white; /* Kolor tekstu */
+  height: 50px;
+}
+
+.main-content {
+  background-color: #ffffff; /* Kolor tła kontenera */
+  min-height: calc(
+    100vh - 56px
+  ); /* Wysokość ekranu minus wysokość belki górnej */
+  font-family: "Madim One", cursive; /* Ustawienie czcionki Madim One */
+  line-height: 1.6;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+  box-shadow: 3;
+}
+
+.content-box {
+  background-color: #f5f5dc; /* Kolor tła boxa z zawartością */
+  padding: 20px;
+  min-height: calc(100vh - 56px);
+}
+
+footer {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  padding: 20px 0;
+  height: 50px;
+  margin-top: auto;
+}
+.quiz-description {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 40px;
+}
+.logoSideBar {
+  opacity: 0.5;
+}
+.logoPrimary {
+  width: 100%;
+  border-radius: 10px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Madim+One&display=swap");
+
+h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container-custom {
+  max-width: 80%;
+  margin: auto; /* Wyśrodkowanie kontenera */
+}
+.container-fluid {
+  font-family: "Madim One", cursive;
+  line-height: 1.6;
+  min-height: calc(100vh - 56px);
+}
+footer .container {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Zapewnia pełną szerokość */
+  max-width: none;
+  border-radius: 10px 10px 0 0;
+}
+.box {
+  display: flex;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.form-login {
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+::placeholder {
+  text-align: center;
+}
+
+.row-form {
+  margin: 20px;
+}
+.content-wrap-form {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrap-form {
+  flex: 1;
+}

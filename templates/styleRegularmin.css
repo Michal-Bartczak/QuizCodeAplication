@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Madim+One&display=swap");
+
+nav {
+  background-color: orange;
+  color: white; /* Kolor tekstu */
+  height: 50px;
+}
+
+.main-content {
+  background-color: #ffffff; /* Kolor tła kontenera */
+  min-height: calc(
+    100vh - 56px
+  ); /* Wysokość ekranu minus wysokość belki górnej */
+  font-family: "Madim One", cursive; /* Ustawienie czcionki Madim One */
+  line-height: 1.6;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+  box-shadow: 3;
+}
+
+.content-box {
+  background-color: #f5f5dc; /* Kolor tła boxa z zawartością */
+  padding: 20px;
+  min-height: calc(100vh - 56px);
+}
+
+footer {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  padding: 20px 0;
+  height: 50px;
+  margin-top: auto;
+}
+.quiz-description {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 40px;
+}
+.logoSideBar {
+  opacity: 0.5;
+}
+.logoPrimary {
+  width: 100%;
+  border-radius: 10px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Madim+One&display=swap");
+
+h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.container-custom {
+  max-width: 80%;
+  margin: auto; /* Wyśrodkowanie kontenera */
+}
+.container-fluid {
+  font-family: "Madim One", cursive;
+  line-height: 1.6;
+  min-height: calc(100vh - 56px);
+  padding: 0;
+}
+footer .container {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Zapewnia pełną szerokość */
+  max-width: none;
+  border-radius: 10px 10px 0 0;
+}
+.box {
+  display: flex;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.form-login {
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+::placeholder {
+  text-align: center;
+}
+
+.row-form {
+  margin: 20px;
+}
+.content-wrap-form {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+.side-video {
+  float: right;
+}
+.video-container {
+  background-color: #ffa500;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.side-video video {
+  margin: 0; /* Usuwa marginesy */
+  padding: 0; /* Usuwa paddingi */
+  display: block; /* Zapewnia, że wideo wyświetlają się jeden pod drugim */
+}
+.animation-container {
+  width: 125px;
+  height: 880px;
+  background-color: orange;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around; /* Rozmieszcza znaki zapytania w trzech kolumnach */
+}
+
+.question-mark {
+  position: absolute;
+  font-size: 24px;
+  animation: flow 5s infinite linear; /* Zwiększamy czas trwania i używamy liniowego tempa */
+  /* Losowe położenie początkowe */
+}
+
+/* Kluczowe klatki animacji "płynięcia" */
+@keyframes flow {
+  0% {
+    top: -50px; /* Początek poza kontenerem */
+  }
+  100% {
+    top: 930px; /* Koniec poniżej kontenera */
+  }
+}
+
+/* Przykład różnic w pozycjonowaniu znaków zapytania */
+.question-mark:nth-child(1),
+.question-mark:nth-child(4),
+.question-mark:nth-child(8) {
+  left: 10%; /* Pierwsza kolumna */
+}
+
+.question-mark:nth-child(2),
+.question-mark:nth-child(2),
+.question-mark:nth-child(2) {
+  left: 45%; /* Druga kolumna */
+}
+
+.question-mark:nth-child(3),
+.question-mark:nth-child(3),
+.question-mark:nth-child(3) {
+  left: 80%; /* Trzecia kolumna */
+}
+
+/* Przykład różnic w opóźnieniu startu animacji */
+.question-mark:nth-child(1) {
+  animation-delay: 0s;
+}
+.question-mark:nth-child(2) {
+  animation-delay: 1s;
+}
+.question-mark:nth-child(3) {
+  animation-delay: 2s;
+}
+.question-mark:nth-child(4) {
+  animation-delay: 3s;
+}
